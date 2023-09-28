@@ -1,0 +1,43 @@
+{
+  "name": "minifloat",
+  "version": "0.0.1",
+  "description": "Library for dealing with \"minifloats\": a nonstandard generalization of IEEE 754 floating point numbers with less than 32 bits of precision",
+  "keywords": [
+    "minifloat", "ieee754", "float", "number", "binary",
+    "encode", "decode", "pack", "unpack", "serialize", "decode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shicks/minifloat.git"
+  },
+  "homepage": "https://github.com/shicks/minifloat",
+  "main": "dist/minifloat.js",
+  "scripts": {
+    "test": "make test",
+    "build": "make"
+  },
+  "author": "Stephen Hicks <stephenhicks@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "assemblyscript": "^0.27.9",
+    "esbuild": "^0.19.3",
+    "typescript": "^5.2.2",
+    "wasm-sourcemap": "^1.0.0"
+  },
+  "type": "module",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/minifloat.d.ts",
+    "dist/minifloat.js",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/minifloat.js",
+      "types": "./dist/minifloat.d.ts"
+    }
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "extends": "assemblyscript/std/assembly.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "es2022",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "module": "es2022",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "rootDir": "./src",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+  },
+  "include": [
+    "src/*.ts"
+  ]
+}
